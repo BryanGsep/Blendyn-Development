@@ -27,6 +27,7 @@ by Do Tien Dung, September, 2022
 * Step4: Choose plotting engine (Matplotlib), ploting dimension, plot frequency and plot type
 * Step5: Click on `Plot variable`
 * Step6: Open `Image Editer` Window and open the closest image to see the graph results
+
 [Guidance Video](https://drive.google.com/file/d/12Wgo8uCcu9zVAzMgaOK-MAZGgz6bz_WM/view?usp=sharing)
 
 #### Plotting with `bokeh`
@@ -37,6 +38,7 @@ by Do Tien Dung, September, 2022
 * Step5: Click on `Plot variable`
 If you choose `show in localhost`, one localhost would appear on your browser with the graph
 * (If you choose `save as png`) Step6: Open `Image Editer` window and open the closest image to see the graph results
+
 [Guidance Video](https://drive.google.com/file/d/1G7EQGE_luLYgjK5RKH96COUPUuKI0mca/view?usp=sharing)
 
 #### Visualising `modal` as `Blendyn Components`
@@ -49,7 +51,9 @@ If you choose `show in localhost`, one localhost would appear on your browser wi
 Repeat step 4,5,6 if there is more than one modal
 * Step7: Choose `Mesh Object`
 * Step8: `Confirm`
+
 [Guidance Video 1](https://drive.google.com/file/d/18WK2ro4a3yRr5K2rym4f9KG6K-qlem2Z/view?usp=sharing)
+
 [Guidance Video 2](https://drive.google.com/file/d/1PnPyJq08O2StzeUhV4gJyDGnYKEsoTjD/view?usp=sharing)
 
 #### Visualising internal force or internal moment for deformable elements
@@ -59,6 +63,7 @@ Repeat step 4,5,6 if there is more than one modal
 * Step4: `Standard Import`
 * Step5: `Animate Scene`
 * Step6: Choose `Material Preview` in `Viewport Shading`
+
 [Guidance Video](https://drive.google.com/file/d/1sXWVIqQN-BjtGM46LsZ8YKfdhACUZJYE/view?usp=sharing)
 
 ## My strace for GSoC 2022
