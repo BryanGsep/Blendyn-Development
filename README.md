@@ -13,6 +13,46 @@ by Do Tien Dung, September, 2022
 - [File Change](https://github.com/zanoni-mbdyn/blendyn/pull/51/files)
 - [Commits History](https://github.com/zanoni-mbdyn/blendyn/pull/51/commits)
 
+## Critical Algorithms
+#### Animating modal
+
+The most challenging section for visualising `modal` element is extract `modal node` data from different files and put them together in one formula
+to make the `motion paths`. The image below show how I extract and use the file data to get the modal location.
+<p align = "center">
+<img width="1500" alt="Modal animation" src="https://user-images.githubusercontent.com/77573775/188975108-29369900-bab7-4210-af07-b1fd48729fdf.png">
+</p>
+
+#### Visualising internal properties of beam2
+
+I prefer using shader nodes to visualise internal properties of all deformable elements. The most simple one is `beam2` element. `beam2` have only one evaluation point in its central. Therefore, I design shader node for `beam2` same as the image bellow. For each internal property value, I turn them 
+into corresponding color in `RGB` shader node to set the same color for the whole `beam2` object.
+<p align = "center">
+<img width="500" alt="beam2 shader node" src="https://user-images.githubusercontent.com/77573775/188975188-c9289018-3b00-4481-94b3-799710065c4c.png">
+</p>
+
+#### Visualising internal properties of beam3
+
+`beam3` element has two evaluation points in the middle of the first and second parts. They have their own internal properties values in each time point. 
+Therefore, design `beam3` shader node as bellow using `Texture Coordinate` and `ColorRamp` with linear interpolation method to show the change of internal properties along `beam3` element. In addition, I use middle node object (`_RF2`) for source of coordinate in `Texture Coordinate` shader node.
+
+<p align = "center">
+<img width="500" alt="beam3 shader node" src="https://user-images.githubusercontent.com/77573775/188975207-6ed02176-084a-4954-9303-6fbc775e2789.png">
+</p>
+
+#### Visualising internal properties of shell4 and membrane4
+
+`shell4` and `membrane4` elements have upto 4 evaluation points in middle of their edges. Therefore, I have to use 2 `ColorRamp` shader nodes with linear interpolation. In addition, I also create one hidden empty object named `elem.name` + `_ctr` which have average location and rotation of the visualising element. The object is used as source of coordinate in `Texture Coordinate` shader node.
+
+<p align = "center">
+<img width="500" alt="shell4 and membrane4 shader node" src="https://user-images.githubusercontent.com/77573775/188975243-b2084bd0-39f3-46bf-8d74-c90a9144f6f4.png">
+</p>
+
+Currently, internal force and internal moment outputs for `shell4` and `membrane4` elements haven't implemented in MBDyn yet. I could only make some manual demo for the visualisation as the image bellow.
+
+<p align = "center">
+<img width="500" alt="shell4 result" src="https://user-images.githubusercontent.com/77573775/188975268-9ba67b7a-540e-4626-895f-e8f3b42fa4ff.png">
+</p>
+
 ## Example
 - [Beam Slider](https://drive.google.com/file/d/171uiprQyw_J72Nsp5sEqcG8kWWpCnhNx/view?usp=sharing)
 - [ssbeam](https://drive.google.com/file/d/1TXppjv6WpJqlQhvARd366sICb9ht08Bg/view?usp=sharing)
