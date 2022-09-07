@@ -3,7 +3,7 @@ by Do Tien Dung, September, 2022
 
 ## Project overview and objective
 [Blendyn](https://github.com/zanoni-mbdyn/blendyn) is one of post-processing tools of [MBDyn](https://www.mbdyn.org/) - multibody simulation engine. Blendyn is built as an Add-ons of [Blender](https://www.blender.org/) which allow user to visualise MBDyn output datas with 3D animations. Blendyn was first implemented in 2017. However, there are some rooms for improvement and some parts of current Blendyn was out of date. In this project, I focus on developing some of them:
-1. Improving graph plotting function and adding two new plotting engine into Blendyn `matplotlib` and `bokeh` beside `pygal`
+1. Improving graph plotting function and adding two new plotting engines into Blendyn `matplotlib` and `bokeh` beside `pygal`
 2. Visualising two MBDyn elements: `beam slider` and `modal`
 3. Visualising internal force and internal moment for deformable elements: `beam2`, `beam3`, `shell4`, `membrane4`
 4. Improving UI
@@ -26,7 +26,7 @@ by Do Tien Dung, September, 2022
 * Step3: Choose plotting variale (For example: `node.struct.1.X`)
 * Step4: Choose plotting engine (Matplotlib), ploting dimension, plot frequency and plot type
 * Step5: Click on `Plot variable`
-* Step6: Open `Image Editer` Window and open the closest image to see the graph results
+* Step6: Open `Image Editer` Window and open the latest image to see the graph results
 
 [Guidance Video](https://drive.google.com/file/d/12Wgo8uCcu9zVAzMgaOK-MAZGgz6bz_WM/view?usp=sharing)
 
@@ -71,6 +71,6 @@ Repeat step 4,5,6 if there is more than one modal
 - [Weekly reports](https://public.gitlab.polimi.it/DAER/mbdyn/-/wikis/GSoC-Students-Blogs)
 
 ## Future work
-- Finishing internal force and internal moment visualisation for `shell4` and `membrane4` elements when their MBDyn output avaialble.
-- Eventhough I have successed in visualising internal force and internal moment for `beam2` and `beam3`. However, choosing correct value for `Min` and `Max` boundary is challenge. `Autosetup Boundary` can't solve that problem effectively. I hope that, we can have a better way to implement it in the future.
-- Making 3D ploting for 'trajectory' plot type and show it in a `local host` when ploting with `bokeh`
+- Finishing internal force and internal moment visualisation for `shell4` and `membrane4` elements when their MBDyn outputs are available.
+- Eventhough I have successed in visualising internal force and internal moment for `beam2` and `beam3`, choosing correct value for `Min` and `Max` boundary is challenge. `Autosetup Boundary` can't solve that problem effectively. I hope that, we can have a better way to implement it in the future.
+- Making 3D ploting for 'trajectory' plot type and show it in a `localhost` when ploting with `bokeh`
