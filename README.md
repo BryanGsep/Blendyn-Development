@@ -77,7 +77,7 @@ Currently, internal force and internal moment outputs for `shell4` and `membrane
 * Step4: Choose plotting engine (Bokeh), ploting dimension, plot frequency, plot type and output format (`show in localhost` or `save as png`)
 * Step5: Click on `Plot variable`
 If you choose `show in localhost`, one localhost would appear on your browser with the graph
-* (If you choose `save as png`) Step6: Open `Image Editer` window and open the closest image to see the graph results
+* (If you choose `save as png`) Step6: Open `Image Editer` window and open the latest image to see the graph results
 
 [Guidance Video](https://drive.google.com/file/d/1G7EQGE_luLYgjK5RKH96COUPUuKI0mca/view?usp=sharing)
 
