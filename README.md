@@ -106,7 +106,7 @@ Repeat step 4,5,6 if there is more than one modal
 
 [Guidance Video](https://drive.google.com/file/d/1sXWVIqQN-BjtGM46LsZ8YKfdhACUZJYE/view?usp=sharing)
 
-## My strace for GSoC 2022
+## My strace
 - [Blendyn development proposal](https://docs.google.com/document/d/13YRZmQG28vJxjMJzE7wCPlxZB1kvi0N0aN4e53q4rfM/edit?usp=sharing)
 - [Weekly reports](https://public.gitlab.polimi.it/DAER/mbdyn/-/wikis/GSoC-Students-Blogs)
 
