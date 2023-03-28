@@ -1,4 +1,4 @@
-#Blendyn Development
+# Blendyn Development
 by Do Tien Dung, September, 2022
 
 ## Project overview and objective
